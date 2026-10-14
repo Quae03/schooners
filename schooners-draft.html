@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schooners Seafood Restaurant – Draft Concept</title>
+<style>
+  :root{
+    --navy:#0e2236; --navy2:#16334d; --amber:#f2a33a; --cream:#fbf5ea; --ink:#1b2733; --mute:#6b7886;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  .draft{background:#c0392b;color:#fff;text-align:center;font-size:13px;padding:8px 16px;letter-spacing:.02em}
+  header{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:14px 5vw}
+  .logo{font-family:Georgia,serif;font-size:1.4rem;font-weight:bold;letter-spacing:.04em}
+  .logo span{color:var(--amber)}
+  nav a{color:#fff;text-decoration:none;margin-left:22px;font-size:.95rem}
+  nav a:hover{color:var(--amber)}
+  .hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 55%,#1f5a73 100%);color:#fff;padding:110px 5vw 120px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:var(--cream);clip-path:ellipse(75% 100% at 50% 100%)}
+  .hero h1{font-family:Georgia,serif;font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.1;max-width:14ch}
+  .hero h1 em{color:var(--amber);font-style:normal}
+  .hero p{max-width:46ch;margin:22px 0 32px;font-size:1.15rem;color:#d6e2ee}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;text-decoration:none;font-weight:bold;margin-right:12px}
+  .btn.primary{background:var(--amber);color:var(--navy)}
+  .btn.ghost{border:2px solid #fff;color:#fff}
+  .tags{margin-top:34px;display:flex;gap:10px;flex-wrap:wrap}
+  .tags span{background:rgba(255,255,255,.12);padding:6px 14px;border-radius:999px;font-size:.85rem}
+  section{padding:80px 5vw;max-width:1150px;margin:auto}
+  h2{font-family:Georgia,serif;font-size:2.1rem;color:var(--navy);margin-bottom:10px}
+  .lead{color:var(--mute);max-width:60ch;margin-bottom:38px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px}
+  .card{background:#fff;border-radius:16px;padding:26px;box-shadow:0 6px 22px rgba(14,34,54,.08);border-top:4px solid var(--amber)}
+  .card h3{font-family:Georgia,serif;color:var(--navy);margin-bottom:6px}
+  .card p{font-size:.95rem;color:var(--mute)}
+  .photo{border-radius:16px;min-height:260px;background:repeating-linear-gradient(45deg,#e6dcc7,#e6dcc7 14px,#efe6d3 14px,#efe6d3 28px);display:flex;align-items:center;justify-content:center;color:#8a7d62;font-size:.9rem;text-align:center;padding:20px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+  .why{list-style:none;margin-top:18px}
+  .why li{padding:8px 0 8px 30px;position:relative}
+  .why li::before{content:"⚓";position:absolute;left:0;color:var(--amber)}
+  .band{background:var(--navy);color:#fff;border-radius:22px;padding:46px;display:grid;grid-template-columns:1.2fr 1fr;gap:30px}
+  .band h2{color:#fff}
+  .info p{margin-bottom:10px;color:#d6e2ee}
+  .info strong{color:var(--amber)}
+  .ph{background:#fff3d6;color:#8a5a00;padding:1px 7px;border-radius:6px;font-size:.9em}
+  footer{background:#08141f;color:#8fa3b5;text-align:center;padding:28px 5vw;font-size:.85rem}
+  @media(max-width:780px){.split,.band{grid-template-columns:1fr}nav{display:none}}
+</style>
+</head>
+<body>
+<div class="draft">DESIGN CONCEPT – prepared for review. This is not the official Schooners website. Items in <b>[brackets]</b> are placeholders to be confirmed.</div>
+
+<header>
+  <div class="logo">Schooners <span>Seafood</span></div>
+  <nav><a href="#about">About</a><a href="#menu">Favourites</a><a href="#vibe">The Vibe</a><a href="#visit">Visit</a></nav>
+</header>
+
+<div class="hero">
+  <h1>Good food. Great <em>pub vibes.</em></h1>
+  <p>A relaxed, family-friendly pub and seafood restaurant in Port Shepstone. Hearty plates, a lively bar and a team that looks after you.</p>
+  <a class="btn primary" href="#visit">Book a table</a><a class="btn ghost" href="#menu">See our favourites</a>
+  <div class="tags"><span>Family friendly</span><span>Dog friendly</span><span>Lively bar</span><span>Owner run</span></div>
+</div>
+
+<section id="about">
+  <div class="split">
+    <div>
+      <h2>Your local, with a fresh new look</h2>
+      <p class="lead">Schooners has been refreshed and the welcome is as warm as ever. Come for lunch, stay for the bar, bring the family (and the dog).</p>
+      <ul class="why">
+        <li>Quality food at fair prices</li>
+        <li>Owners on the floor every day</li>
+        <li>Quick, friendly service</li>
+        <li>Plenty of seating for groups and families</li>
+      </ul>
+    </div>
+    <div class="photo">[PHOTO: refreshed restaurant interior / bar – to be supplied by client]</div>
+  </div>
+</section>
+
+<section id="menu">
+  <h2>Crowd favourites</h2>
+  <p class="lead">A taste of what regulars keep coming back for. Full menu and prices <span class="ph">[to be supplied]</span>.</p>
+  <div class="grid">
+    <div class="card"><h3>Eisbein</h3><p>A Schooners signature, slow-cooked and hearty.</p></div>
+    <div class="card"><h3>Steak &amp; Chips</h3><p>Classic pub comfort done properly.</p></div>
+    <div class="card"><h3>Potato Skins</h3><p>Served with a rich cheese sauce. Perfect for sharing.</p></div>
+    <div class="card"><h3>Pulled Pork</h3><p>Tacos and burritos packed with flavour.</p></div>
+    <div class="card"><h3>Burgers</h3><p>Big, juicy and made for hungry crowds.</p></div>
+    <div class="card"><h3>Seafood</h3><p>From the sea to your table <span class="ph">[seafood dishes TBC]</span>.</p></div>
+  </div>
+</section>
+
+<section id="vibe">
+  <div class="split">
+    <div class="photo">[PHOTO: friends at the bar / family table – to be supplied]</div>
+    <div>
+      <h2>Pull up a chair</h2>
+      <p class="lead">Whether it is a sundowner, a family lunch or a catch-up with friends, there is a spot for you. Ask about <span class="ph">[specials / sport nights / events]</span>.</p>
+      <a class="btn primary" href="#visit">Plan your visit</a>
+    </div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="band">
+    <div>
+      <h2>Find Schooners</h2>
+      <p style="color:#d6e2ee;margin-bottom:20px">Located on Abingdon Road in Port Shepstone, in the same centre as the Spar.</p>
+      <div class="photo" style="min-height:170px;background:#1c3b57;color:#9db6cc">[MAP EMBED – to be added]</div>
+    </div>
+    <div class="info">
+      <p><strong>Address:</strong> Abingdon Road, Port Shepstone, KZN <span class="ph">[full address TBC]</span></p>
+      <p><strong>Hours:</strong> <span class="ph">[trading hours TBC]</span></p>
+      <p><strong>Phone / WhatsApp:</strong> <span class="ph">[number TBC]</span></p>
+      <p><strong>Email:</strong> <span class="ph">[email TBC]</span></p>
+      <p><strong>Social:</strong> <span class="ph">[Facebook / Instagram links TBC]</span></p>
+      <a class="btn primary" style="margin-top:12px" href="#">Call to book</a>
+    </div>
+  </div>
+</section>
+
+<footer>© <span class="ph">[year / owner]</span> Schooners Seafood Restaurant · Port Shepstone · Draft concept by <span class="ph">[Your Web Design Company]</span></footer>
+</body>
+</html>
